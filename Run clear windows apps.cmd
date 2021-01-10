@@ -5,7 +5,6 @@ ECHO =====================================
 ECHO.
 ECHO           Windows Clean Apps
 ECHO.
-ECHO   by : Thiago Erick
 ECHO   https://github.com/ichiSawatari
 ECHO =====================================
 ECHO.
@@ -49,9 +48,6 @@ exit /B
 setlocal & cd /d %~dp0
 if '%1'=='ELEV' (del "%vbsGetPrivileges%" 1>nul 2>nul  &  shift /1)
 
-::::::::::::::::::::::::::::
-::START
-::::::::::::::::::::::::::::
 REM Run shell as admin (example) - put here code as you like
 chcp 437 >nul
 cd /d "%~dp0"
@@ -82,7 +78,6 @@ ECHO =====================================
 ECHO.
 ECHO           Windows Clean Apps
 ECHO.
-ECHO   by : Thiago Erick
 ECHO   https://github.com/ichiSawatari
 ECHO =====================================
 ECHO.
@@ -136,7 +131,7 @@ pause
     powershell -command "Get-AppxPackage -AllUsers *Microsoft.News* | Remove-AppxPackage"
     powershell -command "Get-AppxPackage -AllUsers *Microsoft.Newsletter* | Remove-AppxPackage"
     powershell -command "Get-AppxPackage -AllUsers *Microsoft.MicrosoftNewsletter* | Remove-AppxPackage"
-	REM powershell -command "Get-AppxPackage -AllUsers *Microsoft.Windows.NarratorQuickStart* | Remove-AppxPackage"
+    powershell -command "Get-AppxPackage -AllUsers *Microsoft.Windows.NarratorQuickStart* | Remove-AppxPackage"
     echo. Removendo apps de terceiros
     powershell -command "Get-AppxPackage -AllUsers *Netflix* | Remove-AppxPackage"
     powershell -command "Get-AppxPackage -AllUsers *Spotify* | Remove-AppxPackage"
@@ -270,7 +265,6 @@ ECHO =====================================
 ECHO.
 ECHO           Windows Clean Apps
 ECHO.
-ECHO   by : Thiago Erick
 ECHO   https://github.com/ichiSawatari
 ECHO =====================================
 ECHO.
@@ -451,7 +445,6 @@ pause
 	ECHO.
 	ECHO           Windows Clean Apps
 	ECHO.
-	ECHO   by : Thiago Erick
 	ECHO   https://github.com/ichiSawatari
 	ECHO =====================================
 	ECHO.
